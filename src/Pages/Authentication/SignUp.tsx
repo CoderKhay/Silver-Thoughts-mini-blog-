@@ -36,12 +36,13 @@ const SignUp = () => {
       }
       console.error("Error signing up:", error);
     }
+    
   };
 
   return (
     <div className="flex flex-col justify-center items-center h-screen">
-      <div className="mt-13 bg-[rgb(239,230,216)] w-90 h-90 shadow-lg rounded-md p-5">
-        <h2 className="text-3xl font-medium mb-5">Hello There</h2>
+      <div className="mt-13 bg-white/70 backdrop-blur-xl rounded-xl w-90 h-95 shadow-xl border border-white/40 p-5">
+        <h2 className="text-3xl font-medium mb-5 font-['Playfair_Display']">Hello There</h2>
         <label htmlFor="mail">Email</label>
         <br />
         <input
@@ -68,7 +69,7 @@ const SignUp = () => {
         <br />
         <button
           type="button"
-          className="bg-[#42582a] hover:bg-[#42582a]/96 mt-8 w-full p-2 rounded-md text-white cursor-pointer"
+          className="bg-linear-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 hover:scale-[1.02] transition shadow-lg mt-8 w-full p-2 rounded-md text-white cursor-pointer"
           onClick={signUp}
         >
           Sign Up

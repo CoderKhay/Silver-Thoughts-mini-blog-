@@ -60,8 +60,8 @@ const SignOut = () => {
 
   return (
     <div className="flex flex-col justify-center items-center h-screen">
-      <div className="mt-13 bg-[rgb(239,230,216)] w-90 h-95 shadow-lg rounded-md p-5">
-        <h2 className="text-3xl font-medium mb-2">Welcome back</h2>
+      <div className="mt-13 bg-white/70 backdrop-blur-xl rounded-xl w-90 h-95 shadow-xl border border-white/40 p-5">
+        <h2 className="text-3xl font-medium mb-2 font-['Playfair_Display']">Welcome back</h2>
         <p className="text-md text-gray-500 mb-3">
           Sign in to your account to continue
         </p>
@@ -91,20 +91,20 @@ const SignOut = () => {
         <br />
         <button
           type="button"
-          className="bg-[#42582a] hover:bg-[#42582a]/96 mt-8 w-full p-2 rounded-md text-white cursor-pointer"
+          className="bg-linear-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 hover:scale-[1.02] transition shadow-lg mt-8 w-full p-2 rounded-md text-white cursor-pointer"
           onClick={signIn}
         >
           Sign In
         </button>
 
         <p className="text-xs mt-4 text-center font-semibold cursor-default">
-          Don't have an account?{" "}
+          New here?{" "}
           <Link
             to="/signup"
             className="text-[#42582a] font-bold cursor-pointer hover:text-[#42582a]/70"
           >
-            use any email/password to get started
-          </Link>
+create an account with any email and password         
+ </Link>
         </p>
       </div>
     </div>

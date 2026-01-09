@@ -29,7 +29,7 @@ const CreatePost = () => {
 
   return (
     <div className="h-screen flex justify-center items-center">
-      <div className="bg-[rgb(239,230,216)] w-80 h-83 rounded-md p-5">
+      <div className="mt-13 bg-white/70 backdrop-blur-xl rounded-xl w-90 h-90 shadow-xl border border-white/40 p-5">
         <h1 className="text-center text-xl font-medium">Post a Thought</h1>
         <div>
           <label htmlFor="postHeading">Title:</label>
@@ -53,7 +53,7 @@ const CreatePost = () => {
           ></textarea>
         </div>
         <button
-          className="bg-[#42582a] hover:bg-[#42582a]/96 mt-2 w-full p-2 rounded-md text-white cursor-pointer"
+          className="bg-linear-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 hover:scale-[1.02] transition shadow-lg mt-2 w-full p-2 rounded-md text-white cursor-pointer"
           onClick={createPost}
         >
           Submit Post

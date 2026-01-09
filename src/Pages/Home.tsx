@@ -50,16 +50,16 @@ const Home = () => {
   };
 
   return (
-    <div className="p-10 text-center flex flex-col justify-center items-center gap-2 h-screen">
+    <div className="p-10 text-center flex flex-col justify-center items-center gap-2 min-h-screen">
       {!useAuth.currentUser && (
         <>
           {" "}
-          <p className="mb-5 text-md text-[#4A3F35] font-extrlight mt-10">
+          <p className="mb-5 text-md text-gray-600 font-extrlight mt-10">
             Every thoughts has a story, we collect them - the quiet ones, loud
             ones, the beautiful and the broken. Step in, and let your thoughts
             find a voice.
           </p>
-          <h1 className="text-2xl">
+          <h1 className="text-3xl font-['Playfair_Display'] font-bold">
             Welcome to
             <span className="text-[#42582a] font-semibold">
               {" "}
@@ -70,14 +70,14 @@ const Home = () => {
           {!useAuth.currentUser && (
             <Link
               to="signup"
-              className="block bg-[#42582a]/60 text-white p-3 rounded-md font-semibold w-38 mb-5"
+              className="block bg-linear-to-r from-emerald-600 to-emerald-700 text-white p-3 rounded-md font-medium w-38 mb-5 hover:scale-105 transition duration-300 shadow-lg hover:shadow-xl"
             >
               Get Started
             </Link>
           )}
         </>
       )}
-      <h2 className="text-left w-full text-2xl text-[#4A3F35] font-semibold mt-10">
+      <h2 className="text-left w-full text-2xl text-[#4A3F35] font-semibold mt-9 mb-9 font-['Playfair_Display']">
         Feautured Posts
       </h2>
 
@@ -88,7 +88,7 @@ const Home = () => {
       ) : (
         <div className="flex flex-col gap-10 text-left flex-wrap">
           {posts.map((post) => (
-            <div key={post.id} className="bg-[rgb(239,230,216)] p-4 rounded-md">
+            <div key={post.id} className=" bg-white/70 border-white/70 shadow-lg p-4 rounded-md"> 
               <div className="flex justify-between items-center">
                 <h1 className="uppercase text-left font-medium mb-4">
                   {post.title}
@@ -100,10 +100,10 @@ const Home = () => {
                   </button>
                 )}
               </div>
-              <div className="postTextContainer wrap-break-word h-auto max-h-75 w-90 overflow-hidden overflow-y-aut0">
+              <div className="postTextContainer wrap-break-word h-auto max-h-75 w-90 overflow-hidden overflow-y-auto">
                 {post.postThought}
               </div>
-              <h3 className="text-left font-medium mt-4">{post.author.name}</h3>
+              <h3 className="text-left font-bold mt-4">{post.author.name}</h3>
             </div>
           ))}
         </div>
