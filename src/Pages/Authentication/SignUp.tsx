@@ -43,7 +43,7 @@ const SignUp = () => {
     <div className="flex flex-col justify-center items-center h-screen">
       <div className="mt-13 bg-white/70 backdrop-blur-xl rounded-xl w-90 h-95 shadow-xl border border-white/40 p-5">
         <h2 className="text-3xl font-medium mb-5 font-['Playfair_Display']">Hello There</h2>
-        <label htmlFor="mail">Email</label>
+        <label htmlFor="mail" className="text-sm">Email</label>
         <br />
         <input
           type="email"
@@ -55,7 +55,7 @@ const SignUp = () => {
           className="border border-[#D8CFC4] w-full rounded-sm mt-2 mb-1 p-1 bg-white/50 outline-none placeholder:text-xs placeholder:italic"
         />
         <br />
-        <label htmlFor="userpassword">Password</label>
+        <label htmlFor="userpassword" className="text-sm">Password</label>
         <br />
         <input
           type="password"

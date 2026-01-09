@@ -65,7 +65,7 @@ const SignOut = () => {
         <p className="text-md text-gray-500 mb-3">
           Sign in to your account to continue
         </p>
-        <label htmlFor="mail">Email</label>
+        <label htmlFor="mail" className="text-sm">Email</label>
         <br />
         <input
           type="email"
@@ -77,7 +77,7 @@ const SignOut = () => {
           className="border border-[#D8CFC4] w-full rounded-sm mt-2 mb-1 p-1 bg-white/50 outline-none placeholder:text-xs placeholder:italic"
         />
         <br />
-        <label htmlFor="userpassword">Password</label>
+        <label htmlFor="userpassword" className="text-sm">Password</label>
         <br />
         <input
           type="password"

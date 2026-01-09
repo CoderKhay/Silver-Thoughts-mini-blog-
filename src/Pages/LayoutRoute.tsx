@@ -23,7 +23,7 @@ const Layout = () => {
     <div className="min-h-[70vh] bg-linear-to-br from-slate-100 to-emerald-50 relative ">
       <div className="fixed z-10 top-0 text-black p-2 pl-5 h-11 mb-5 flex space-x-10 w-full   backdrop-blur-md bg-white/70 shadow-sm">
         <h1 className="font-medium text-xl text-[#42582a] font-['Playfair_Display']">SilverThoughts</h1>
-        <nav className="space-x-4">
+        <nav className="space-x-4 text-sm mt-1">
           <Link to=".">Home</Link>
           {!useAuth.currentUser ? (
             <Link to="signin">Sign In</Link>
