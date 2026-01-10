@@ -83,7 +83,7 @@ const Home = () => {
 
       {posts.length == 0 ? (
         <p className="mt-10 text-gray-500">
-          No posts yet, be the first to create one! sign In now!
+          No posts yet, be the first to create one! 
         </p>
       ) : (
         <div className="flex flex-col gap-10 text-left flex-wrap">
