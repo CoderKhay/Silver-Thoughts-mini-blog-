@@ -61,11 +61,15 @@ const SignOut = () => {
   return (
     <div className="flex flex-col justify-center items-center h-screen">
       <div className="mt-13 bg-white/70 backdrop-blur-xl rounded-xl w-90 h-95 shadow-xl border border-white/40 p-5">
-        <h2 className="text-3xl font-medium mb-2 font-['Playfair_Display']">Welcome back</h2>
+        <h2 className="text-3xl font-medium mb-2 font-['Playfair_Display']">
+          Welcome back
+        </h2>
         <p className="text-md text-gray-500 mb-3">
           Sign in to your account to continue
         </p>
-        <label htmlFor="mail" className="text-sm">Email</label>
+        <label htmlFor="mail" className="text-sm">
+          Email
+        </label>
         <br />
         <input
           type="email"
@@ -77,7 +81,9 @@ const SignOut = () => {
           className="border border-[#D8CFC4] w-full rounded-sm mt-2 mb-1 p-1 bg-white/50 outline-none placeholder:text-xs placeholder:italic"
         />
         <br />
-        <label htmlFor="userpassword" className="text-sm">Password</label>
+        <label htmlFor="userpassword" className="text-sm">
+          Password
+        </label>
         <br />
         <input
           type="password"
@@ -103,8 +109,8 @@ const SignOut = () => {
             to="/signup"
             className="text-[#42582a] font-bold cursor-pointer hover:text-[#42582a]/70"
           >
-create an account with any email and password         
- </Link>
+            create an account with any email and password
+          </Link>
         </p>
       </div>
     </div>

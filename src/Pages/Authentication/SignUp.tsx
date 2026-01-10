@@ -1,8 +1,6 @@
 import { auth } from "../../Config/firebase-config";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { useState } from "react";
-import { useContext } from "react";
-import { AuthContext } from "../LoginStateTracker/CreateAuthContext";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
@@ -11,12 +9,6 @@ const SignUp = () => {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  const useAuth = useContext(AuthContext);
-  console.log(useAuth);
-
-  if (useAuth.currentUser) {
-    console.log("You are wonderful kamaldeen");
-  }
   //Sign up for new user
   const signUp = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -36,14 +28,17 @@ const SignUp = () => {
       }
       console.error("Error signing up:", error);
     }
-    
   };
 
   return (
     <div className="flex flex-col justify-center items-center h-screen">
       <div className="mt-13 bg-white/70 backdrop-blur-xl rounded-xl w-90 h-95 shadow-xl border border-white/40 p-5">
-        <h2 className="text-3xl font-medium mb-5 font-['Playfair_Display']">Hello There</h2>
-        <label htmlFor="mail" className="text-sm">Email</label>
+        <h2 className="text-3xl font-medium mb-5 font-['Playfair_Display']">
+          Hello There
+        </h2>
+        <label htmlFor="mail" className="text-sm">
+          Email
+        </label>
         <br />
         <input
           type="email"
@@ -55,7 +50,9 @@ const SignUp = () => {
           className="border border-[#D8CFC4] w-full rounded-sm mt-2 mb-1 p-1 bg-white/50 outline-none placeholder:text-xs placeholder:italic"
         />
         <br />
-        <label htmlFor="userpassword" className="text-sm">Password</label>
+        <label htmlFor="userpassword" className="text-sm">
+          Password
+        </label>
         <br />
         <input
           type="password"
